@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'BayerSans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BayerSans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BayerSans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BayerSans';
+  src: url('https://cloudfront.885812045782.cloud.bayer.com/BayerSans/BayerSansWeb-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'BayerSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
