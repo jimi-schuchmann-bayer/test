@@ -1,0 +1,306 @@
+.customer-interaction {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.customer-interaction .section-header {
+  margin-bottom: 24px;
+}
+
+.interaction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.interaction-card {
+  background: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.interaction-card.suggested-visits {
+  grid-column: 1 / -1;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.card-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.events-list,
+.meetings-list,
+.suggestions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.event-item {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.event-item:hover {
+  border-color: #00A651;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.event-type-badge {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+  height: fit-content;
+}
+
+.event-type-badge.meeting {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.event-type-badge.event {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.event-type-badge.training {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.event-details {
+  flex: 1;
+}
+
+.event-details h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.event-customer {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.event-date,
+.event-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.meeting-item {
+  padding: 16px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.meeting-item:hover {
+  border-color: #00A651;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.meeting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.meeting-header h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.meeting-date {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.meeting-subject {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.meeting-outcome {
+  padding: 8px 12px;
+  background: #dcfce7;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.meeting-outcome strong {
+  color: #166534;
+}
+
+.meeting-notes {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.suggestions-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.suggestion-item {
+  padding: 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.suggestion-item:hover {
+  border-color: #00A651;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.suggestion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.suggestion-header h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.priority-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.priority-badge.high {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.priority-badge.medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.suggestion-reason {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.suggestion-reason strong {
+  color: #1a1a1a;
+}
+
+.suggestion-meta {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.suggestion-action {
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.suggestion-action strong {
+  display: block;
+  font-size: 12px;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.suggestion-action p {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.schedule-button {
+  width: 100%;
+  padding: 10px;
+  background: #00A651;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.schedule-button:hover {
+  background: #008d44;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 166, 81, 0.2);
+}
+
+@media (max-width: 1200px) {
+  .interaction-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .customer-interaction {
+    padding: 16px;
+  }
+
+  .interaction-card {
+    padding: 16px;
+  }
+
+  .suggestions-list {
+    grid-template-columns: 1fr;
+  }
+}
